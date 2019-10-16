@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class coleta : MonoBehaviour
 {
-    private int pontos = 0;
+    public int pontos = 0;
+    
     void Update()
     {
         
     }
     private void OnCollisionEnter2D(Collision2D outro)
-    {
+    {        
         if (outro.gameObject.CompareTag("moeda"))
         {
-           
+            Destroy(outro.gameObject);
+            pontos++;
         }
     }
 }
