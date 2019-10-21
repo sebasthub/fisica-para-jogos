@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7937273903356337280}
   - component: {fileID: 7937273903356337287}
   - component: {fileID: 7937273903356337286}
-  - component: {fileID: -3517064595980685695}
   m_Layer: 0
   m_Name: tiror
   m_TagString: tiro
@@ -106,7 +105,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.021574765, y: 0.00000013411045}
@@ -122,15 +121,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6538734, y: 0.35404614}
   m_EdgeRadius: 0
---- !u!114 &-3517064595980685695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7937273903356337285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98d0f9a3f6a27934f97f0d65528001a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
