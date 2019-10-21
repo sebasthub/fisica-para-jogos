@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cenas/Cena2.unity
     guid: a0cdbfc436cfbdc4296b01a6e977e873
+  - enabled: 1
+    path: Assets/Cenas/Cena3.unity
+    guid: 5807f811a7e24784aa10b1f6f8a98891
   m_configObjects: {}

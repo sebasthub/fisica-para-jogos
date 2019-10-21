@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class movimento : MonoBehaviour
 {
     public int velo = 5;
     private float controle, forca = 250f;
     public int duplo = 2;
     public Rigidbody2D puto;
+    public bool lado;
     void Update()
     {
         controle = Input.GetAxis("Horizontal");
@@ -16,6 +18,14 @@ public class movimento : MonoBehaviour
             {
             pulo();
             }
+        if (controle < 0)
+        {
+            lado = false;
+        }
+        else
+        {
+            lado = true;
+        }
     }
     public void pulo() {
         if (duplo > 0)

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class coleta : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class coleta : MonoBehaviour
     public GameObject g;
     private Text omg;
     private AudioSource audio;
+    public int tempo = 0;
     private void Start()
     {
         omg = g.GetComponent<Text>();
@@ -17,6 +19,21 @@ public class coleta : MonoBehaviour
     void Update()
     {
         omg.text = "pontos: " + pontos;
+        if (pontos == 2) 
+        {
+
+            if (tempo >= 100)
+            {
+                SceneManager.LoadScene("Cena3");
+            }
+        }
+    }
+    private void FixedUpdate()
+    {
+        if (pontos == 2)
+        {
+            tempo += 1;
+        }
     }
     private void OnCollisionEnter2D(Collision2D outro)
     {        

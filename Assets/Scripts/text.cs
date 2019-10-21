@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class text : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public text testo;
+    
     void Start()
     {
-        
+            
     }
 
     // Update is called once per frame
